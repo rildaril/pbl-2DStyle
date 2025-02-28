@@ -1,0 +1,126 @@
+.hero {
+  position: relative;
+  height: 800px;
+  background-color: #eee;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/assets/img/HeroProduk.png") no-repeat center center;
+  background-size: cover;
+  margin-top: -40px;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  font-size: 1.5rem;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white; /* Warna teks untuk memastikan terlihat di atas gambar */
+  text-align: center; /* Tengah secara horizontal */
+  
+}
+
+.hero-content-img {
+  position: absolute;
+  bottom: -25%;
+  left: 15%;
+  
+}
+
+.hero-content-2 {
+  position: absolute;
+  bottom: -10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: white; /* Warna teks untuk memastikan terlihat di atas gambar */
+  text-align: center; /* Tengah secara horizontal */
+  
+}
+
+.hero h4 {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 7.5rem;
+  font-family: 'League Spartan';
+}
+
+.price {
+  margin-top: -10px;
+}
+
+.produk-img {
+  width: 100%;
+  transition: transform 0.2s;
+  z-index: -100;
+}
+
+.produk-img:hover {
+  transform: scale(1.02);
+}
+
+.timewarp {
+  background-color: #000;
+  position: relative;
+  top: -12px;
+}
+
+.pagination > li > a {
+  background-color: white;
+  color: #5a4181;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: black;
+  background-color: #eee;
+  border-color: #ddd;
+}
+
+.pagination > .active > a {
+  color: white;
+  background-color: black !important;
+  border: solid 1px black !important;
+}
+
+.pagination > .active > a:hover {
+  background-color: black !important;
+  border: solid 1px black;
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    height: 400px;
+    margin: 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
+    height: 250px;
+    margin: 0;
+  }
+
+  .featured-products h2 {
+    font-size: 1.3rem;
+    letter-spacing: 0.3em;
+  }
+
+  .card-wrapper {
+    display: block;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .produk-wrapper {
+    padding: 0 0 3em 0;
+  }
+}
